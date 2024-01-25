@@ -245,4 +245,8 @@ p {
     flex-direction: column;
     justify-content: space-around;
   }
+  .lbox{
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
