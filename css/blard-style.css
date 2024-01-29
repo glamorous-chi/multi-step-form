@@ -12,7 +12,7 @@
   --Alabaster: hsl(231, 100%, 99%);
   --White: hsl(0, 0%, 100%);
   --para: 16px;
-  --family: "Ubuntu", "Sans-Serif";
+  --family: "Ubuntu";
   --fw-semi: 400;
   --fw-bold: 500;
   --fw-xbold: 700;
@@ -113,8 +113,9 @@ section {
   box-shadow: none;
   border: none;
 }
-.top h4{
+.top h2{
   color: var(--Marineblue);
+  font-size: 20px;
 }
 p {
   color: var(--Coolgray);
@@ -135,24 +136,14 @@ p {
     background-color: transparent;
     color: var(--Coolgray);
 }
-/* .btn-container{
-  margin-top: 6rem;
-} */
-.btn-container a{
-  background-color: var(--Marineblue);
-  color: var(--Lightblue);
-  border: none;
-  text-decoration: none;
+.lbox{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 10px;
 }
-.btn-container:nth-child(1){
-    background-color: transparent;
-    color: var(--Coolgray);
-}
-.btn-container a:hover{
-  background-color: var(--Marineblue);
-  color: var(--Lightblue);
-  opacity: .9;
-}
+
+
 
 /* .form-switch .form-check-input::not(:checked) {
     background-position: right center;
@@ -245,8 +236,22 @@ p {
     flex-direction: column;
     justify-content: space-around;
   }
-  .lbox{
-    display: flex;
-    justify-content: space-evenly;
+  /* .btn-container {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--White);
+  } */
+  .btn-container :nth-child(2) {
+    /* right: -60%; */
+    position: relative;
+    background-color: var(--Marineblue);
+    color: var(--Lightblue);
   }
+  .btn-container :nth-child(1){
+      background-color: transparent;
+      color: var(--Coolgray);
+      font-size: 22px;
+  }
+  
 }

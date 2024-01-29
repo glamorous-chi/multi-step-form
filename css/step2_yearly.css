@@ -54,7 +54,7 @@ main {
   margin-top: 2rem;
   border: 1px solid var(--White);
 }
-.three {
+.two {
   background-color: var(--Lightblue);
   color: var(--Marineblue);
 }
@@ -67,16 +67,21 @@ main {
 section {
   width: 200px;
   position: absolute;
-  top: 17%;
+  top: 20%;
   background-color: var(--Alabaster);
   padding: 10px;
   border-radius: 10px;
-  height: 60vh;
+  /* height: 70vh; */
 }
-.box{
-  height: 10vh;
+/* .box{
+    line-height: 4px;
+} */
+.box-content p{
+  height: 12vh;
   border:1px solid var(--Coolgray);
   border-radius: 10px;
+  font-size:10px;
+
   /* display: flex;
   align-items: center; */
   /* padding: 10px; */
@@ -87,31 +92,37 @@ section {
 .box:hover{
   border:1px solid var(--Purplishblue);
 }
-.box-content h5{
+.box-content h4, .lbox :nth-child(1){
   color: var(--Marineblue);
-  font-size:15px ;
 }
 .box-content p{
    color:var(--Coolgray);
 }
-.box-content p, span{
-  font-size: 11px;
+.lbox, .lbox:hover{
+  height: 6vh;
+  border: none;
+  background-color: var(--Magnolia);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
 }
-span{
-  color: var(--Purplishblue);
+.form-check-input{
+  background-color: var(--Marineblue) !important;
 }
-.top p{
-font-size: 15px;
+.form-check-input, .form-input{
+  box-shadow: none;
+  border: none;
 }
-.top h2{
+.form-check-input, #flexSwitchCheckChecked{
+  box-shadow: none;
+  border: none;
+}
+.top h4{
   color: var(--Marineblue);
 }
 p {
   color: var(--Coolgray);
-}
-h5{
-    font-size: 20px;
-    font-weight: var(--fw-xbold);
 }
 .next-btn {
   width: 100%;
@@ -122,17 +133,21 @@ h5{
 .next-btn .btn {
   /* right: -60%; */
   position: relative;
-  color: var(--Coolgray);
-  font-weight: var(--fw-xbold);
-}
-.next-btn :nth-child(2){
   background-color: var(--Marineblue);
   color: var(--Lightblue);
 }
-.next-btn a:hover{
-  color: var(--Lightblue);
-  opacity: .9;
-} 
+.next-btn :nth-child(1){
+    background-color: transparent;
+    color: var(--Coolgray);
+}
+.lbox{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+
+
 /* .form-switch .form-check-input::not(:checked) {
     background-position: right center;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
@@ -175,9 +190,9 @@ h5{
     border-radius: 10px;
   }
   section {
-    width: 65% !important;
+    width: 60% !important;
     height: 70vh;
-    /* margin-top: 2rem; */
+    margin-top: 2.5rem;
   }
   main,
   section {
@@ -210,51 +225,36 @@ h5{
     color: var(--White);
   }
   .box{
-    display: flex;
-    height: 10vh;
-    align-items:center;
+    flex-direction: column;
+    height: 18vh;
+    align-items:flex-start !important;
     justify-content: space-between;
-    /* padding: 10px 0 10px 10px; */
+    padding: 10px 0 10px 10px;
   }
-
-  .box-content p, span{
-    font-size: 18px;
+  .box-content h4{
+    font-size: 1rem;
   }
-  .box-content h5{
-    font-size: 20px;
-    font-weight: var(--fw-xbold);
-}
   .main-section{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
- .top p{
-  font-size:20px;
- }
- /* .btn-container a{
-  border: none;
-  text-decoration: none;
-}  */
-.btn-container:nth-child(1){
-    background-color: transparent;
-}
- .btn-container a:hover{
-  color: var(--Lightblue);
-  opacity: .9;
-} 
-.btn-container .btn {
-  /* right: -60%; */
-  position: relative;
-  color: var(--Coolgray);
-  font-weight: var(--fw-xbold);
-  /* margin: auto; */
-}
-.btn-container :nth-child(2){
-  background-color: var(--Purplishblue);
-  color: var(--White);
-}
-/* .btn-container{
-  width: 85%;
-} */
+  /* .btn-container {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--White);
+  } */
+  .btn-container :nth-child(2) {
+    /* right: -60%; */
+    position: relative;
+    background-color: var(--Marineblue);
+    color: var(--Lightblue);
+  }
+  .btn-container :nth-child(1){
+      background-color: transparent;
+      color: var(--Coolgray);
+      font-size: 22px;
+  }
+  
 }

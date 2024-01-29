@@ -1,16 +1,245 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+} */
 
 :root{
-    --Marineblue: hsl(213, 96%, 18%);
-    --Purplishblue: hsl(243, 100%, 62%);
-    --Pastelblue: hsl(228, 100%, 84%);
-    --Lightblue: hsl(206, 94%, 87%);
-    --Strawberryred: hsl(354, 84%, 57%);
-    --Coolgray: hsl(231, 11%, 63%);
-    --Lightgray: hsl(229, 24%, 87%);
-    --Magnolia: hsl(217, 100%, 97%);
-    --Alabaster: hsl(231, 100%, 99%);
-    --White: hsl(0, 0%, 100%);
-    --paragraph:16px;
+--Marineblue: hsl(213, 96%, 18%);
+--Purplishblue: hsl(243, 100%, 62%);
+--Pastelblue: hsl(228, 100%, 84%);
+--Lightblue: hsl(206, 94%, 87%);
+--Strawberryred: hsl(354, 84%, 57%);
+--Coolgray: hsl(231, 11%, 63%);
+--Lightgray: hsl(229, 24%, 87%);
+--Magnolia: hsl(217, 100%, 97%);
+--Alabaster: hsl(231, 100%, 99%);
+--White: hsl(0, 0%, 100%);
+--paragraph:16px;
+--family:"ubuntu";
+--fw-semi:400;
+--fw-bold:500;
+--fw-xbold:700;
+
+}
+
+body{
+    background-color: var(--Magnolia);
+    font-family: var(--family);
+}
+main{
+    background-image: url("../assets/images/bg-sidebar-mobile.svg");
+    display: flex;
+    height: 30vh;
+    background-size: cover;
+    justify-content: center;
+    /* Parents always take realative, things to be moved around can be absolute */
+    position: relative;
+}
+.one,.two,.three,.four{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--White);
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 2rem;
+    border: 1px solid var(--White);
+}
+.four{
+    background-color: var(--Lightblue);
+    color: var(--Marineblue);
+}
+.nav-btn :nth-child(1):hover{
+background-color: var(--Lightblue);
+color: var(--Marineblue);
+} 
+
+section{
+    position: absolute;
+    top: 17%;
+    background-color: var(--White);
+    padding: 10px;
+    border-radius: 10px;
+    height: 60vh;
+}
+.top h2{
+    color: var(--Marineblue);
+    font-weight: var(--fw-xbold);
+}
+.top p{
+    color: var(--Coolgray);
+    font-size: 16px;
+}
+.inner-div{
+    height: 28vh;
+    background-color: var(--Magnolia);
+    border-radius: 7px;
+    line-height: 12px;
+}
+.inner-div h5, h4{
+    font-size: 18px;
+    color: var(--Coolgray);
+}
+.arcade h5{
+    color: var(--Marineblue);
+    font-weight: var(--fw-xbold);
+}
+.arcade a{
+    color: var(--Coolgray);
+    font-weight: var(--fw-semi);
+}
+.arcade-div span{
+    color: var(--Marineblue);
+    font-weight: var(--fw-xbold);
+}
+/* .online-div h5{
+    color: var(--Coolgray);
+}
+.larger-div h5{
+    color: var(--Coolgray);
+}
+.total-div h5{
+    color: var(--Coolgray);
+} */
+.online-div span{
+    color: var(--Marineblue);
+}
+.larger-div span{
+    color: var(--Marineblue);
+}
+.total-div span{
+    font-size: 20px;
+    color: var(--Purplishblue);
+    font-weight: var(--fw-xbold);
+}
+.next-btn {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--White);
+    /* height: 60px; */
+  }
+  .next-btn .btn {
+    /* right: -60%; */
+    position: relative;
+    color: var(--Coolgray);
+    font-weight: var(--fw-xbold);
+  }
+  .next-btn :nth-child(2){
+    background-color: var(--Purplishblue);
+    color: var(--White);
+  }
+  .next-btn a:hover{
+    color: var(--Lightblue);
+    opacity: .9;
+  }
+
+
+  @media (min-width: 768px) and (max-width: 900px){
+    section{
+      margin-top: 2rem;
     }
+  } 
+  
+  @media (min-width: 900px) {
+    body {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .main-container {
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 75vh;
+      background-color: var(--White);
+      padding: 15px;
+      border-radius: 10px;
+    }
+    main {
+      width: 30% !important;
+      height: 70vh;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-image: url("../assets/images/bg-sidebar-desktop.svg");
+      background-size: cover;
+      background-position: 100%;
+      border-radius: 10px;
+    }
+    section {
+      width: 65% !important;
+      height: 70vh;
+      position: static;
+      /* margin-top: 2rem; */
+    }
+    
+    main,
+    section {
+      position: static;
+      background-color: var(--White);
+    }
+  
+    .nav-btn :nth-child(1) {
+      margin-top: 0;
+    }
+  
+    .one,
+    .two,
+    .three,
+    .four {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .nav-btn {
+      margin-top: 2rem;
+       margin-left: 1.5rem;
+    }
+    .nav-content span {
+      color: var(--Coolgray);
+    }
+    .nav-content h5 {
+      color: var(--White);
+    }
+    .main-section{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+   .top p{
+    font-size:20px;
+   }
+   .inner-div{
+    height: 21vh;
+   }
+  .btn-container :nth-child(1){
+      background-color: transparent;
+      color: var(--Coolgray);
+  }
+   .btn-container a:hover{
+    color: var(--Lightblue);
+    opacity: .9;
+  } 
+ 
+  .btn-container :nth-child(2){
+    background-color: var(--Purplishblue);
+    color: var(--White);
+  }
+ .btn-container{
+  position: relative;
+  top: 35%;
+ }
+  }
+
