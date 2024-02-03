@@ -251,7 +251,7 @@ h5{
   /* margin: auto; */
 }
 .btn-container :nth-child(2){
-  background-color: var(--Purplishblue);
+  background-color: var(--Marineblue);
   color: var(--White);
 }
 /* .btn-container{

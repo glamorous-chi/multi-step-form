@@ -199,9 +199,6 @@ p{
     .next-btn-desktop .btn{
         background-color: var(--Marineblue);
         color: var(--Alabaster);
-        position: absolute;
-        width: 18%;
-        left: 82%;    
     } 
     
     
