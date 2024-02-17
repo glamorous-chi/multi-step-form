@@ -98,33 +98,45 @@
           <h2>Select your plan</h2>
           <p>You have option of monthly or yearly billing</p>
         </div>
-    <div class="row gap-3 gap-md-0">  
-      <div class="box col-10 offset-1 col-md-3 offset-md-0 d-flex align-items-center">
-        <div class="box-icon">
-          <img src="./assets/images/icon-arcade.svg" alt="">
+    <div class="row gap-3 gap-md-0">
+      
+        <div class="box col-10 offset-1 col-md-3 offset-md-0 d-flex align-items-center">
+          <a href="./step4.html" id="four">
+            <div class="box-icon">
+              <img src="./assets/images/icon-arcade.svg" alt="">
+            </div>
+            <div class="box-content ms-4 ms-md-0">
+              <h4>Arcade</h4>
+              <p id="arcadePrice">$9/mo</p>
+              <p class="para" id="arcade"></p>
+            </div>
+          </a>
         </div>
-        <div class="box-content ms-4 ms-md-0">
-          <h4>Arcade</h4>
-          <p>$9/mo</p>
-        </div>
-      </div>
+       
       <div class="box col-10 offset-1 col-md-3 d-flex align-items-center">
-        <div class="box-icon">
-          <img src="./assets/images/icon-advanced.svg" alt="">
-        </div>
-        <div class="box-content ms-4 ms-md-0">
-          <h4>Advanced</h4>
-          <p>$12/mo</p>
-        </div>
+        <a href="./step4.html" id="four">
+          <div class="box-icon">
+            <img src="./assets/images/icon-advanced.svg" alt="">
+          </div>
+          <div class="box-content ms-4 ms-md-0">
+            <h4>Advanced</h4>
+            <p id="advancedPrice"> $12/mo</p>
+            <p class="para" id="advanced"></p>
+          </div>
+        </a>
       </div>
+
       <div class="box col-10 offset-1 col-md-3 d-flex align-items-center">
-        <div class="box-icon">
-          <img src="./assets/images/icon-pro.svg" alt="">
-        </div>
-        <div class="box-content ms-4 ms-md-0">
-          <h4>Pro</h4>
-          <p>$15/mo</p>
-        </div>
+        <a href="./step4.html" id="four">
+          <div class="box-icon">
+            <img src="./assets/images/icon-pro.svg" alt="">
+          </div>
+          <div class="box-content ms-4 ms-md-0">
+            <h4>Pro</h4>
+            <p id="proPrice">$15/mo</p>
+            <p class="para" id="pro"></p>
+          </div>
+        </a> 
       </div>
       <div class="lbox col-11">
           <span>Monthly</span>
@@ -136,9 +148,9 @@
     </div>  
     
 
-    <!-- For Desktop -->
+    <!-- For Desktop md,lg -->
     <div class="btn-container d-none d-md-flex justify-content-between ">
-      <a class="btn btn-lg mb-3 " href="./index.html">Go back</a>
+      <a class="btn btn-lg mb-3" id="goBack1" href="./index.html">Go back</a>
       <a class="btn btn-lg mb-3" href="./step3.html">Next Step</a>
     </div>
   </section>
@@ -147,13 +159,10 @@
 
   <!-- For Mobile -->
   <div class="next-btn container py-3 d-md-none d-flex justify-content-between">
-    <a class="btn btn-lg mb-3" href="./index.html">Go back</a>
+    <a class="btn btn-lg mb-3" id="goBack2" href="./index.html">Go back</a>
     <a class="btn btn-lg mb-3" href="./step3.html">Next Step</a>
   </div>
 
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+  <script src="./JS/step2.js"></script>
 </body>
 </html>

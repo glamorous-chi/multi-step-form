@@ -59,10 +59,10 @@ main {
   color: var(--Marineblue);
 }
 
-.nav-btn :nth-child(1):hover {
+/* .nav-btn :nth-child(1):hover {
   background-color: var(--Lightblue);
   color: var(--Marineblue);
-}
+} */
 
 section {
   width: 200px;
@@ -92,6 +92,10 @@ section {
 }
 .box-content p{
    color:var(--Coolgray);
+}
+#advanced, #arcade, #pro{
+  color: var(--Marineblue);
+  font-weight: var(--fw-bold);
 }
 .lbox, .lbox:hover{
   height: 6vh;
@@ -189,7 +193,7 @@ p {
   section {
     width: 60% !important;
     height: 70vh;
-    margin-top: 2.5rem;
+    /* margin-top: 2.5rem; */
   }
   main,
   section {
@@ -223,7 +227,7 @@ p {
   }
   .box{
     flex-direction: column;
-    height: 18vh;
+    height: 20vh;
     align-items:flex-start !important;
     justify-content: space-between;
     padding: 10px 0 10px 10px;

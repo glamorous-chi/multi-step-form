@@ -70,10 +70,10 @@ main{
     color: var(--Marineblue);
 } */
 
-.nav-btn :nth-child(1):hover{
+/* .nav-btn :nth-child(1):hover{
 background-color: var(--Lightblue);
 color: var(--Marineblue);
-} 
+}  */
 
 section{
     position: absolute;
@@ -82,11 +82,21 @@ section{
     padding: 10px;
     border-radius: 10px;
 }
+.error{
+    color: var(--Strawberryred);
+    /* padding: 10px; */
+    /* display: none; */
+}
+.input-error{
+    border: 1px solid var(--Strawberryred);
+}
  .form-control:focus{
     box-shadow: none;
     border: 1px solid var(--Purplishblue);
     outline: none;
+    /* outline: 2px solid var(--Strawberryred); */
 } 
+
 
 /* .form-control input:focus{
     outline-color: var(--Purplishblue);
@@ -110,18 +120,16 @@ p{
     position:absolute;
     bottom: 0;
     width: 100%;
+    padding-right: 2rem;
 
 } 
 .next-btn .btn{
     background-color: var(--Marineblue);
     color: var(--Lightblue);
     position: relative;
-    right: -60%;
+    /* right: -60%; */
 }
 
-.next-btn-desktop{
-    display: none;
-} 
 
 
 @media(min-width:600px){
@@ -133,17 +141,17 @@ p{
         height: 100vh;
     }
     .main-container{
-        width: 70%;
+        width: 80%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 75vh;
+        height: 90vh;
         background-color: var(--White);
         padding:15px ;
         border-radius:10px;
     }
     main{
-        height: 70vh;
+        height: 85vh;
         flex-direction: column;
         width: 30% !important;
         background-image: url(../assets/images/bg-sidebar-desktop.svg);
@@ -155,7 +163,7 @@ p{
     }
     section{
         width: 60% !important;
-        height: 70vh;
+        height: 85vh;
         margin-top: 2.5rem;
         
     }
@@ -201,6 +209,21 @@ p{
         color: var(--Alabaster);
     } 
     
+    .btn-container{
+        margin-top: 2rem;
+    } 
+    
+    .btn-container a{
+        background-color: var(--Marineblue);
+        color: var(--Lightblue);
+        border: none;
+        text-decoration: none;
+    }
+    .btn-container a:hover{
+        background-color: var(--Marineblue);
+        color: var(--Lightblue);
+        opacity: .9;
+    }
     
 }
 
